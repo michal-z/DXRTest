@@ -173,7 +173,7 @@ static void CreateStaticGeometry(FDemoRoot& Root, eastl::vector<ID3D12Resource*>
 
 		const size_t PositionsSize = Positions.size();
 		const size_t TrianglesSize = Triangles.size();
-		LoadPLYFile("Data/Meshes/Sphere.ply", Positions, Normals, Texcoords, Triangles);
+		LoadPLYFile("Data/Meshes/Monkey.ply", Positions, Normals, Texcoords, Triangles);
 
 		VertexData.reserve(Positions.size());
 

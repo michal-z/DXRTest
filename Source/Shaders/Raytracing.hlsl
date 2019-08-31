@@ -63,7 +63,7 @@ void MainRGS()
 	Ray.TMin = 0.001f;
 	Ray.TMax = 1000.0f;
 	FPayload Payload = { float4(0.0f, 0.0f, 0.0f, 0.0f) };
-	TraceRay(GScene, RAY_FLAG_CULL_FRONT_FACING_TRIANGLES, ~0, 0, 1, 0, Ray, Payload);
+	TraceRay(GScene, RAY_FLAG_CULL_BACK_FACING_TRIANGLES, ~0, 0, 1, 0, Ray, Payload);
 
 	GOutput[DispatchRaysIndex().xy] = Payload.Color;
 }
